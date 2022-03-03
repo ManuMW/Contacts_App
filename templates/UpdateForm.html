@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <h1>Add Contacts</h1>
+</head>
+<body>
+<form action="/UpdateForm", method="post">
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" name="UName" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="email" name="UEmail">
+            </td>
+            <td>
+                Ph No:
+            </td>
+            <td>
+                <input type="number" name="UNumber">
+            </td>
+        </tr>
+
+    </table>
+    <input type="submit" value="Add Contact">
+</form>
+<h1>Stored Contacts</h1>
+<form action="/UpdateForm" method="get">
+<table>
+    <tr>
+        {% for header in headings %}
+        <th>{{ header }}</th>
+        {% endfor %}
+    </tr>
+    {% for row in data %}
+        <tr>
+            {% for cell in row %}
+                <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+</form>
+<form action="/LogOut" method="get">
+    <input type="submit" value="Log Out">
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1>Sign up</h1>
+</head>
+<body>
+<form action="/SignUp" method="POST">
+    <table>
+        <tr>
+            <td>
+                Email Address:
+            </td>
+
+            <td>
+                <input type="email" name="UpEmail">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="Password" name="UpPassword"> </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Secret Key:
+            </td>
+            <td>
+                <input type="Password" name="UpSecretKey">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Create User">
+</form>
+<form action="/SignIn">
+    <div>
+        <label>Sign In Here</label>
+        <input type="submit" value="Sign In">
+    </div>
+</form>
+</body>
+</html>
