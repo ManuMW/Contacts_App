@@ -1,5 +1,10 @@
 # Contacts_App
-Instructions to run the Contacts App
+Install packages:
+1) flask
+2) datetime
+3) mysql
+
+###Instructions to run the Contacts App
 
 1) Clone the project into your pycharm project
 2) Have a mysql workbench

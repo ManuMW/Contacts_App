@@ -5,7 +5,7 @@ Install packages:
 2) datetime
 3) mysql
 
-### How to run
+How to run
 1) Clone the project into your pycharm project
 2) Have a mysql workbench
 3) Create a connection named as “root” (without quotes) and password as “root” (without quotes).
